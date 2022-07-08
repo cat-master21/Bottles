@@ -75,8 +75,8 @@ script:
   - cd ./build && ninja install && cd ../../ && rm -rf ./libadwaita && unset DESTDIR
    
    # Install Proot
-  - wget -q "https://github.com/proot-me/proot/releases/download/v5.3.0/proot-v5.3.0-x86_64-static" -o AppDir/usr/bin/proot
-  - chmod +x AppDir/usr/bin/proot
+  #- wget -q "https://github.com/proot-me/proot/releases/download/v5.3.0/proot-v5.3.0-x86_64-static" -o AppDir/usr/bin/proot
+  #- chmod +x AppDir/usr/bin/proot
 
 AppDir:
   path: ./AppDir
@@ -88,7 +88,7 @@ AppDir:
     version: 2022.6.28-brescia
     
     # Set proot executable as entry point
-    exec: usr/bin/proot
+    exec: bin/bash
     
     # Set the application main script path as argument. Use '$@' to forward CLI parameters
     exec_args:  -b "$APPDIR/lib:/lib/ld-linux.so.2" bash "$APPDIR/bin/AppRun" "$@"
