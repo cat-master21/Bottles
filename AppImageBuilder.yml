@@ -136,7 +136,6 @@ AppDir:
     - patool
     # - p7zip
     - x11-utils
-    - base-files
 
     exclude:
     - humanity-icon-theme
