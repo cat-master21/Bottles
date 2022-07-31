@@ -148,8 +148,6 @@ AppDir:
       - icoextract
 #      - libc-bin
       - libc-bin:i386
-      - base-files
-      - libgl1-mesa-dri
 
     exclude:
       - humanity-icon-theme
@@ -160,7 +158,7 @@ AppDir:
     # rm -rf $APPDIR/usr/share/man
     # mkdir -p $APPDIR/usr/local/lib/p7zip/
     # ln -s $APPDIR/usr/lib/p7zip/ $APPDIR/usr/local/lib/p7zip/
-    AppDir/usr/bin/appimage_module_patcher $APPDIR/usr/bin/*
+    AppDir/usr/bin/appimage_module_patcher $APPDIR/*
 
   files:
     include:
