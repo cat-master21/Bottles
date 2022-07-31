@@ -158,7 +158,7 @@ AppDir:
     # rm -rf $APPDIR/usr/share/man
     # mkdir -p $APPDIR/usr/local/lib/p7zip/
     # ln -s $APPDIR/usr/lib/p7zip/ $APPDIR/usr/local/lib/p7zip/
-    AppDir/usr/bin/appimage_module_patcher $APPDIR/*
+    AppDir/usr/bin/appimage_module_patcher ./AppDir/*
 
   files:
     include:
