@@ -75,9 +75,9 @@ script:
   - cd ./build && ninja install && cd ../../ && rm -rf ./libadwaita && unset DESTDIR
   
   # Fetch appimage_module_patcher.sh
-  - wget https://gist.githubusercontent.com/cat-master21/96a5f5f41b1db0202b208519badfcfcd/raw/0a2ffc81b5391923ea02afa2c36c73c74f05f1fb/appimage_module_patcher.sh
-  - cp appimage_module_patcher.sh AppDir/usr/bin/appimage_module_patcher
-  - chmod +x AppDir/usr/bin/appimage_module_patcher
+  - wget -q https://gist.githubusercontent.com/cat-master21/96a5f5f41b1db0202b208519badfcfcd/raw/0a2ffc81b5391923ea02afa2c36c73c74f05f1fb/appimage_module_patcher.sh
+  - cp appimage_module_patcher.sh $APPDIR/usr/bin/appimage_module_patcher
+  - chmod +x $APPDIR/usr/bin/appimage_module_patcher
   
 AppDir:
   path: ./AppDir
@@ -159,7 +159,8 @@ AppDir:
     # mkdir -p $APPDIR/usr/local/lib/p7zip/
     # ln -s $APPDIR/usr/lib/p7zip/ $APPDIR/usr/local/lib/p7zip/
     cd $APPDIR
-    ../AppDir/usr/bin/appimage_module_patcher ./*
+    "$APPDIR/usr/bin/appimage_module_patcher" ./*
+    rm "$APPDIR/usr/bin/appimage_module_patcher"
 
   files:
     include:
