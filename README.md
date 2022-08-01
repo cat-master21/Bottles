@@ -19,9 +19,6 @@
   <a href="https://github.com/bottlesdevs/Bottles/actions">
     <img src="https://github.com/bottlesdevs/Bottles/workflows/Build%20release%20packages/badge.svg">
   </a>
-  <a href="https://aur.archlinux.org/packages/bottles/">
-    <img alt="AUR version" src="https://img.shields.io/aur/version/bottles">
-  </a>
   <br>
   <a href="https://stopthemingmy.app" title="Please do not theme this app">
     <img src="https://stopthemingmy.app/badge.svg">
@@ -77,9 +74,7 @@ translate Bottles in your language or how to help improve existing ones.
 - Layers (dependencies and programs on different layers) [#510](https://github.com/bottlesdevs/Bottles/issues/510)
 
 ## ↗️ Install
-Bottles is officially provided as [Flatpak](https://flathub.org/apps/details/com.usebottles.bottles) and [AUR package](https://aur.archlinux.org/packages/bottles/). 
-There are also other packages maintained by our community, like Fedora, 
-[AUR (bottles-git)](https://aur.archlinux.org/packages/bottles-git/), [CachyOS AUR](https://github.com/CachyOS/linux-cachyos#we-are-providing-a-repo-which-includes-all-kernels-in-generic-v3-and-generic-and-more-optimized-packages), and MX Linux.
+Bottles is officially provided as [Flatpak](https://flathub.org/apps/details/com.usebottles.bottles).
 
 Read [here](https://docs.usebottles.com/getting-started/installation) how to
 install Bottles on your distribution.
@@ -88,7 +83,6 @@ install Bottles on your distribution.
 We are happy to see packaged Bottles but we ask you to respect some small rules:
 - The package must be `bottles`, in other distributions it is possible to use suffixes (e.g. `bottles-git` on Arch Linux for the git based package) while on others the RDNN format is required (e.g. `com.usebottles.bottles` on elementary OS and Flathub repository). All other nomenclatures are discouraged.
 - Do not package external files and do not make changes to the code, no hard script. Obviously with the exception of files essential for packaging.
-Once the package is published, you can open a [Pull Request](https://github.com/bottlesdevs/Bottles/pulls) to add it to the packages table above! Thanks :heart:!
 - Package version should follow the CalVer model (year.month.day) and the release cycle of the project. Bottles has 2 released per month: one on 14th and one on 28th. When an hotfix came, this will be appended to the release (e.g. 2022.2.14-1). Bottles as a codename too which is not mandatory and currently only used by the Flatpak.
 
 ## Shortcuts
