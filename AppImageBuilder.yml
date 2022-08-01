@@ -76,8 +76,8 @@ script:
   
   # Fetch appimage_module_patcher.sh
   - wget -q https://gist.githubusercontent.com/cat-master21/96a5f5f41b1db0202b208519badfcfcd/raw/0a2ffc81b5391923ea02afa2c36c73c74f05f1fb/appimage_module_patcher.sh
-  - cp appimage_module_patcher.sh $APPDIR/usr/bin/appimage_module_patcher
-  - chmod +x $APPDIR/usr/bin/appimage_module_patcher
+  - cp appimage_module_patcher.sh /home/runner/work/Bottles/Bottles/AppDir/usr/bin/appimage_module_patcher
+  - chmod +x AppDir/usr/bin/appimage_module_patcher
   
 AppDir:
   path: ./AppDir
@@ -158,9 +158,10 @@ AppDir:
     # rm -rf $APPDIR/usr/share/man
     # mkdir -p $APPDIR/usr/local/lib/p7zip/
     # ln -s $APPDIR/usr/lib/p7zip/ $APPDIR/usr/local/lib/p7zip/
-    cd $APPDIR
-    "$APPDIR/usr/bin/appimage_module_patcher" ./*
-    rm "$APPDIR/usr/bin/appimage_module_patcher"
+    cd /home/runner/work/Bottles/Bottles/AppDir
+    "/home/runner/work/Bottles/Bottles/AppDir/usr/bin/appimage_module_patcher" ./*
+    rm "/home/runner/work/Bottles/Bottles/AppDir/usr/bin/appimage_module_patcher"
+    cd ../
 
   files:
     include:
