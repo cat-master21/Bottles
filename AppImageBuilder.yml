@@ -158,10 +158,6 @@ AppDir:
     # rm -rf $APPDIR/usr/share/man
     # mkdir -p $APPDIR/usr/local/lib/p7zip/
     # ln -s $APPDIR/usr/lib/p7zip/ $APPDIR/usr/local/lib/p7zip/
-    cd /home/runner/work/Bottles/Bottles/AppDir
-    "/home/runner/work/Bottles/Bottles/AppDir/usr/bin/appimage_module_patcher" ./*
-    rm "/home/runner/work/Bottles/Bottles/AppDir/usr/bin/appimage_module_patcher"
-    cd ../
 
   files:
     include:
