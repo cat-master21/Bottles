@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop">
-    <id>com.usebottles.bottles.desktop</id>
     <metadata_license>CC0-1.0</metadata_license>
     <project_license>GPL-3.0-only</project_license>
+    <id>com.usebottles.bottles</id>
+    <launchable type="desktop-id">com.usebottles.bottles.desktop</launchable>
     <name>Bottles</name>
-    <summary>Run Windows software</summary>
+    <summary>Run Windows Software</summary>
     <developer_name translatable="no">Mirko Brombin</developer_name>
     <description>
         <p>Run Windows software on Linux with Bottles!</p>
@@ -42,40 +43,40 @@
     </provides>
     <screenshots>
         <screenshot type="default">
-            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/master/data/appstream/screenshot.png</image>
+            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/main/data/appstream/screenshot.png</image>
         </screenshot>
         <screenshot>
-            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/master/data/appstream/1.png</image>
+            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/main/data/appstream/1.png</image>
         </screenshot>
         <screenshot>
-            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/master/data/appstream/2.png</image>
+            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/main/data/appstream/2.png</image>
         </screenshot>
         <screenshot>
-            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/master/data/appstream/3.png</image>
+            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/main/data/appstream/3.png</image>
         </screenshot>
         <screenshot>
-            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/master/data/appstream/4.png</image>
+            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/main/data/appstream/4.png</image>
         </screenshot>
         <screenshot>
-            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/master/data/appstream/5.png</image>
+            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/main/data/appstream/5.png</image>
         </screenshot>
         <screenshot>
-            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/master/data/appstream/6.png</image>
+            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/main/data/appstream/6.png</image>
         </screenshot>
         <screenshot>
-            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/master/data/appstream/7.png</image>
+            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/main/data/appstream/7.png</image>
         </screenshot>
         <screenshot>
-            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/master/data/appstream/8.png</image>
+            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/main/data/appstream/8.png</image>
         </screenshot>
         <screenshot>
-            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/master/data/appstream/9.png</image>
+            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/main/data/appstream/9.png</image>
         </screenshot>
         <screenshot>
-            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/master/data/appstream/10.png</image>
+            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/main/data/appstream/10.png</image>
         </screenshot>
         <screenshot>
-            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/master/data/appstream/11.png</image>
+            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/main/data/appstream/11.png</image>
         </screenshot>
     </screenshots>
     <translation type="gettext">com.usebottles.bottles</translation>
@@ -86,7 +87,7 @@
     <url type="donation">https://usebottles.com/funding</url>
     <url type="translate">https://hosted.weblate.org/engage/bottles</url>
     <url type="vcs-browser">https://github.com/bottlesdevs/Bottles</url>
-    <url type="contribute">https://github.com/bottlesdevs/Bottles/blob/master/CONTRIBUTING.md</url>
+    <url type="contribute">https://github.com/bottlesdevs/Bottles/blob/main/CONTRIBUTING.md</url>
     <recommends>
       <control>pointing</control>
       <control>keyboard</control>
@@ -96,54 +97,38 @@
       <display_length compare="ge">768</display_length>
     </requires>
     <releases>
-        <release version="2022.7.28-brescia-2" date="2022-07-28">
+        <release version="2022.10.14.1" date="2022-10-14">
           <description>
             <p>News</p>
             <ul>
-                <li>New versioning system which allow versioning the whole bottle (also configuration)</li>
-                <li>Automatic versioning can now be toggled on and off</li>
-                <li>Exclude paths from versioning using patterns</li>
-                <li>Use compression for versioning states</li>
-                <li>Improve Launch Options saving without update the UI multiple times</li>
-                <li>Improved YAML performance using libyaml (the python-yaml package must provide support for it)</li>
-                <li>New About dialog</li>
-                <li>Covers support in Library mode (thanks to SteamGridDB)</li>
-                <li>Removed DXVK HUD option, use the Environment Variables section instead</li>
-                <li>bottles-cli shell option now provide command output</li>
-                <li>The Health Check is now in the About´s Troubleshooting section</li>
-                <li>Extended Core dependencies check, packagers are invited to double-check their packages</li>
-                <li>New default permission for the Flatpak package: xdg-download</li>
-                <li>Added credits for Third-Party Libraries in the Credits section</li>
-                <li>Minor UI improvements</li>
+                <li>The PulseAudio Latency setting is now deprecated and enabled by default</li>
+                <li>Add portal support for setting custom Bottles path thanks to @fries1234</li>
+                <li>Preferences now uses Generic names for better understanding</li>
+                <li>Improved Gamescope support</li>
+                <li>General improvements</li>
             </ul>
 
             <p>Fixes</p>
             <ul>
-                <li>Fix for skipable onboard dialog</li>
-                <li>Fix for empty bottle name</li>
-                <li>Fix gstreamer libs for win32 bottles</li>
-                <li>Fix for RemoteDisconnected error causing a crash</li>
-                <li>Fix wrong Vaniglia listing</li>
-                <li>Fix templates being generated with symlinked paths causing loops</li>
-                <li>Fix configuration migration causing a crash when the user altered the configuration</li>
-                <li>Fix mscoree.dll not found</li>
-                <li>Fix regression for the -b option of the legacy bottles cli</li>
-                <li>Fix Steam Launch Options parser causing a crash</li>
-                <li>Fix a regression in the Add to Steam button not adding the new entry in Steam</li>
+                <li>Fix components mismatch on switching bottle</li>
+                <li>Fix unsafe access to the program"dict" keys</li>
+                <li>Fix unreachable newly-added programs</li>
+                <li>Fix for XDG_* vars being read by the runner even when not applicable</li>
+                <li>Fix charset error parsing acf files</li>
+                <li>Fix bottles list not being updated when removing a bottle</li>
+                <li>Fix empty secion in the Run Executable menu</li>
             </ul>
 
             <p>Translations</p>
             <ul>
-                <li>Finnish translations thanks to Jiri Grönroos</li>
-                <li>French translations thanks to @rjousse18, @julroy67</li>
-                <li>Indonesian translations thanks to @liimee</li>
-                <li>Russian translations thanks to @Knebergish, @lenemter, @Smoque</li>
-                <li>Thai translations thanks to @SashaPGT</li>
-                <li>Spanish translations thanks to Pablo Munoz Alabau, @oscfdezdz</li>
-                <li>Italian translations thanks to @gdonisi</li>
-                <li>Portuguese (Brazil) translations thanks to @geraldohomero</li>
-                <li>German translations thanks to Patrick Ulbricht</li>
+                <li>French translations thanks to Thibaut Colin, @jay-tau</li>
+                <li>Dutch translations thanks to @flipflop97</li>
+                <li>Turkish translations thanks to @Zayria</li>
                 <li>Croatian translations thanks to @milotype</li>
+                <li>Bulgarian translations thanks to @RacerBG</li>
+                <li>Russian translations thanks to @lenemter</li>
+                <li>Bengali translations thanks to Anubis</li>
+                <li>Catalan translations thanks to @rogervc</li>
             </ul>
           </description>
         </release>
